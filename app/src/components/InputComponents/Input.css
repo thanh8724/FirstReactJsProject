@@ -1,0 +1,21 @@
+.form__group input {
+    padding-right: 50px;
+}
+.form__group ion-icon {
+    position: absolute;
+    font-size: 24px;
+    color: rgb(71, 70, 70);
+    top: 12px;
+    right: 15px;
+}
+.form__group, .formError {
+    transition: all 0.3s linear;
+}
+.formError input {
+    border-color: #991b1b;
+    background-color: #df91912b;
+}
+#iconPassword {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}

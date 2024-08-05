@@ -1,0 +1,106 @@
+:root {
+    --trans-bounce: 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+    --trans-bounce2: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    --trans-bounce3: 2s cubic-bezier(0.23, 1, 0.320, 1);
+    --color1: #AECCCF;
+    --color2: #6C9CA4;
+    --box-shadow1: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    --box-shadow2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+    --box-shadow3: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --box-shadow4: 0px 2px 3px 0px rgba(0, 0, 0, 0.30), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+    --box-shadow5: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navBar-li {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    transition: all var(--trans-bounce1);
+}
+
+.navBar-li a {
+    color: #344767;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.navBar-li ion-icon {
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: white;
+}
+
+.navBar-li span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.li-active ion-icon {
+    background-image: linear-gradient(to right top, #ff0080, #7928ca);
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+}
+.navBar-li:hover {
+    background-color: white;
+}
+
+.navBar-ul .li-active {
+    background-color: white;
+}
+
+#showNavBar span {
+    transition: all 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#showNavBar:hover span:nth-child(odd) {
+    transition: all 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 100%;
+}
+
+#showNavBar ion-icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.navBarShow span:nth-child(odd) {
+    transition: all 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 100%;
+}
+
+.navBarShow:hover span:nth-child(odd) {
+    transition: all 0.22s cubic-bezier(0.23, 1, 0.320, 1);
+    width: 60% !important;
+}
+
+.divIcon ion-icon {
+    font-size: 20px;
+}
+
+.divIcon span {
+    position: absolute;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #4BC5DF;
+    z-index: 1;
+    border-radius: 5px;
+    top: -2px;
+    right: 2px;
+}
+
+.no-slect {
+    user-select: none !important;
+    pointer-events: none;
+}
+.text {
+    color: #344767 !important;
+}
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

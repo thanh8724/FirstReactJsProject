@@ -1,0 +1,31 @@
+.showPopup {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#close-popup {
+    position: absolute;
+    font-size: 25px !important;
+    left: 15px;
+    cursor: pointer;
+}
+#delete__product-popup {
+    font-size: 25px !important;
+    color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+#hidden__cartPopup--bottom {
+    font-size: 40px;
+    cursor: pointer;
+}
+.showPopup .popupCart-empty {
+    transform: translateX(0) !important;
+}
+.showPopup .popup__cart--container {
+    transform: translateX(0) !important;
+}
+.price__product--popup {
+    font-size: 15px;
+}
